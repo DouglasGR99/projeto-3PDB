@@ -12,8 +12,6 @@ CREATE TABLE Hortifruti1 (
 
 insert into hortifruti1 values ('12345678912345','959595959');
 
-select * from hortifruti1;
-
 CREATE TABLE Hortifruti2 (
     cnpj VARCHAR(14) NOT NULL,
     email VARCHAR(100) NOT NULL,
@@ -25,9 +23,6 @@ CREATE TABLE Hortifruti2 (
 ); 
 
 insert into hortifruti2 values ('12345678912345','Hortifruti.Azul@gmail.com','Azul da Silva','Lacoste','RJ','RJ');
-
-select * from hortifruti2;
-
 
 CREATE TABLE Cliente (
     cpf VARCHAR(11) NOT NULL,
@@ -46,8 +41,6 @@ insert into cliente values ('00000000000','debito'),
 ('88888888888','dinheiro'),
 ('99999999999','credito');
 
-select * from cliente;
-
 CREATE TABLE Empresas1 (
     cnpj VARCHAR(14) NOT NULL,
     telefone VARCHAR(11),
@@ -57,7 +50,6 @@ CREATE TABLE Empresas1 (
 insert into empresas1 values ('98765432112345','012535648'),
 ('54879621346520','992535648');
 
-select * from empresas1;
 
 CREATE TABLE Empresas2 (
     cnpj VARCHAR(14) NOT NULL,
@@ -67,8 +59,6 @@ CREATE TABLE Empresas2 (
 
 insert into empresas2 values ('98765432112345', 'frutas.hortaliças@gmail.com'),
 ('54879621346520', 'frutitas123@gmail.com');
-
-select * from empresas2;
 
 
 CREATE TABLE Produtos1 (
@@ -84,8 +74,6 @@ insert into produtos1 values ('12345678','7.50'),
 ('54236979','8.99'),
 ('02458936','5.60'),
 ('89812545','12.50');
-
-select * from produtos1;
 
 CREATE TABLE Produtos2 (
     codigo INT(8),
@@ -103,7 +91,6 @@ insert into produtos2 values ('12345678','00000000','2023-07-20','2022-01-20'),
 ('02458936','55555555','2023-09-27','2022-05-20'),
 ('89812545','66666666','2023-11-29','2022-08-25');
 
-select * from produtos2;
 
 CREATE TABLE Transporte (
     cnpj VARCHAR(14) NOT NULL,
@@ -122,5 +109,3 @@ insert into transporte values
 ('02545684595489','0505050505','54236979','DEF7654'),
 ('78122451489201','0606060606','02458936','UVW4321'),
 ('87151112599172','0707070707','89812545','GHI8765');
-
-select * from transporte;
